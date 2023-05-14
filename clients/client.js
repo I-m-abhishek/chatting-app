@@ -4,12 +4,14 @@ const form = document.getElementById('msgsend');
 const msginput= document.getElementById('msginput');
 const msgcontainer = document.querySelector('.container');
 
+
 const appendmsg = (message , position) =>{
  const msgelement= document.createElement('div');
  msgelement.innerText = message;
  msgelement.classList.add(position);
  msgcontainer.append(msgelement);
  
+
 }
 
 form.addEventListener('submit' ,(e)=>{
