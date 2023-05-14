@@ -1,0 +1,61 @@
+.msgleft{
+     border: 2px solid red;
+     padding: 5px 5px;
+     float: left;
+     clear: both;
+     display: block;
+     width: auto;
+     margin: 15px 15px;
+background-color: antiquewhite;
+      word-wrap: break-word;
+     max-width: 45vh;
+     border-radius: 20px;
+
+}
+.msgright{
+    background-color: antiquewhite;
+
+    border: 2px solid yellow;
+    padding: 5px 5px;
+    margin: 15px 15px;
+    float: right;
+    display: block;
+width: auto;
+word-wrap: break-word;
+   max-width: 45vh;
+    clear: both;
+    border-radius: 20px;
+}
+.container{
+    background-color: aqua;
+    height: 75vh;
+    width: 50%;
+    overflow-y: scroll;
+    padding: 25px;
+    margin: auto;
+    margin-bottom: 15px;
+    
+}
+#msgsend{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: block;
+    max-width: 110vh;
+}
+#msginput{
+    text-align: left;
+    width: 88%;
+    margin: auto;
+    height: 30px;
+}
+.btn{
+    cursor: pointer;
+    height: 35px;
+    margin: auto;
+    border-radius: 10px;
+}
+body{
+    /* background-color: black; */
+    background-image: linear-gradient(rgb(100,150,224) , rgb(100,100,100));
+}
