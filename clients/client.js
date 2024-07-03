@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8000' , {transports:['websocket']});
+const socket = io('http://localhost:8001' , {transports:['websocket']});
 
 const form = document.getElementById('msgsend');
 const msginput= document.getElementById('msginput');
@@ -10,7 +10,8 @@ const appendmsg = (message , position) =>{
  msgelement.innerText = message;
  msgelement.classList.add(position);
  msgcontainer.append(msgelement);
- 
+
+
 
 }
 
@@ -26,13 +27,13 @@ const username = prompt('Enter your name to join chat','abhi');
 socket.emit('new-user-joined', username);
 
 socket.on('user-joined' , username=>{
-    appendmsg(`${username} joined the chat` , 'msgleft');
+    appendmsg(`${username} joined the chat` , 'msgmid');
 })
 socket.on('receive' , data=>{
     appendmsg(`${data.name} : ${data.message}` , 'msgleft');
 })
 socket.on('left' , name=>{
-    appendmsg(`${name} left the chat` , 'msgleft');
+    appendmsg(`${name} left the chat` , 'msgmid');
 })
 
 

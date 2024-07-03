@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chat app live </title>
-    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <title>Chat App Live</title>
+    <script defer src="http://localhost:8001/socket.io/socket.io.js"></script>
     <script defer src="clients/client.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        
-    </div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Chat Application</h1>
+        </div>
+        <div class="chat-messages container" id="chat-messages">
 
-    <div class="send">
-        <form action="#" id="msgsend">
-            <input type="text" name="msginput" id="msginput">
-            <button class="btn" type="submit">Send Now</button>
-        </form>
+        </div>
+        <div class="chat-input">
+            <form action="#" id="msgsend">
+                <input type="text" name="msginput" id="msginput" placeholder="Type a message...">
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
